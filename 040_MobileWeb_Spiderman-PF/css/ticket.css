@@ -1,0 +1,335 @@
+@charset "utf-8";
+#wrap {
+    width: 100%;
+    border: none;
+    background: #000;
+}
+/* ======================================================================
+    FIXED 모바일 햄버거 메뉴 효과
+====================================================================== */
+/* A. 햄버거 메뉴 그리기 */
+input[id="menuicon"] {
+    display: none;
+}
+input[id="menuicon"]+label {
+    display: block;
+    width: 56px;
+    height: 60px;
+    cursor: pointer;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 90;
+    background: rgba(0, 0, 0, 0.9);
+}
+input[id="menuicon"]+label span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background-color: #fff;
+    /* 포지션 */
+    position: fixed;
+    z-index: 90;
+    transition: all 0.3s;
+}
+input[id="menuicon"]+label span:nth-child(1) {
+    left: 16px;
+    top: 24px;
+}
+input[id="menuicon"]+label span:nth-child(2) {
+    left: 16px;
+    top: 30px;
+}
+input[id="menuicon"]+label span:nth-child(3) {
+    left: 16px;
+    top: 34px;
+}
+
+/* B. 클릭시 X 버튼 만들기 */
+/* 가운데에 보내놓고 난 뒤에 회전시킴 */
+input[id="menuicon"]:checked+label span:nth-child(1){
+    top: 34px;
+    transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+input[id="menuicon"]:checked+label span:nth-child(3) {
+    top: 32px;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+/* C. GNB 메뉴 슬라이딩 효과  */
+.header nav[class="mobile_gnb"] {
+    width: 250px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    /* 포지션 */
+    position: fixed;
+    left: -258px;
+    top: 0;
+    z-index: 89;
+    transform: all 0.3s;
+}
+input[id="menuicon"]:checked + label + nav{
+    left: 0;
+}
+
+
+/* Banner  */
+.header {
+    height: 60px;
+}
+.header .banner {
+    /* 포지션 */
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 10;
+}
+.header .banner img {
+    width: 100%;
+    width: 324px;
+}
+
+
+
+/* Search Form */
+#contents form {
+    margin-top: 20px;
+}
+.box {
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.search_container {
+    width: 100%;
+    vertical-align: top;
+    /* 포지션 위치기준값 */
+    position: relative;
+}
+
+/* ::placeholder 접두어 */
+.search_container input#search::placeholder {
+    color: #fff;
+}
+
+/* 폰트어썸 아이콘 */
+.search_container .icon {
+    color: #4f5b66;
+    /* 포지션 */
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    margin-top: 17px;
+    margin-left: 17px;
+    
+}
+/* input Form */
+.search_container input#search {
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 11px;
+    padding-left: 45px;
+    border: none;
+    outline: none;
+    float: left;
+}
+
+/* 호버효과 */
+.search_container input#search:hover,
+.search_container input#search:focus,
+.search_container input#search:active {
+    background: #2b303b;
+}
+
+/* Contents Section */
+.promotion {
+    margin-top: 16px;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 0.875em;
+    line-height: 1.5;
+    text-align: center;
+}
+.promotion p {
+    font-weight: 500;
+}
+.promotion p:last-child {
+    margin-top: 16px;
+}
+
+/* Youtube Section */
+.youtube {
+    margin-top: 10px;
+    padding: 0 10px;
+}
+.youtube iframe {
+    width: 100%;
+}
+
+/* Area Script Section */
+/* .area {
+    margin-top: 16px;
+    padding: 0 10px;
+
+}
+.area h3 {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: center;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+    margin-bottom: 24px;
+}
+.area p {
+    margin-top: 20px;
+}
+.area p button {
+    display: inline-block;
+    padding: 14px 10px;
+    background: #003f37;
+    border: none;
+    border-radius: 4px;
+    margin: 0 4px 8px 0;
+    font-size: 0.6875rem;
+    color: #fff;
+}
+#myBtn {
+    cursor: pointer;
+} */
+
+/* 타이틀 */
+
+.title h2{
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    padding: 40px 0px 40px 16px;
+    position: relative;
+    /* margin-bottom: 30px; */
+}
+
+/* .title h2::before,
+.title h2::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #c6a972;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-45deg);
+}
+.title h2::before {
+    left: 62px;
+    top: 19px;
+}
+.title h2::after {
+    left: 17px;
+    top: 64px;
+} */
+
+
+/* 스와이퍼  */
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    width: 100% !important;
+    /* height: 500px !important; */
+    height: 100% !important;
+}
+
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrapper {
+    /* padding-bottom: 26px; */
+    margin-bottom: 26px;
+}
+.swiper-pagination-bullet {
+    background: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: red !important;
+    width: 16px !important;
+    border-radius: 10px !important;
+
+}
+/* 스와이퍼 버튼 커스텀 */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    width: 30px !important;
+    height: 50px !important;
+    font-size: 20px !important;
+    text-align: center;
+    line-height: 50px !important;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+/* 캐릭터 정보 */
+.character_area {
+    padding: 0 16px;
+    margin-bottom: 90px;
+}
+.character_area h2 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    padding: 40px 0 40px;
+    padding-right: 0;
+}
+.char_cover {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+.char_img_info {
+    width: 48%;
+    margin-bottom: 30px;
+}
+.char_img_info h3 {
+    width: 100%;
+    height: 60%;
+}
+.char_img_info h3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.character_area .char_img_info:nth-child(3),
+.character_area .char_img_info:nth-child(4) {
+    /* margin-bottom: 0; */
+}
+
+.char_info {
+    width: 100%;
+    background: #fff;
+    padding: 16px 0 16px 16px;
+    border-top: none;
+}
+.char_img_info .char_info h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    padding-bottom: 40px;
+}
+.char_img_info .char_info p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #000;
+}

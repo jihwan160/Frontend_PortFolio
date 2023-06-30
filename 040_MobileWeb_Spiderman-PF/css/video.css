@@ -1,0 +1,99 @@
+@charset "utf-8";
+
+#wrap {
+    width: 100%;
+    height: 100% !important;
+    background: #FFF;
+}
+
+
+input[id="menuicon"]+label {
+    /* background: none; */
+    background: rgba(0, 0, 0, 0.9);
+}
+
+header {
+    /* 포지션 위치기준값 */
+    position: relative;
+    /* margin-bottom: 22px; */
+}
+
+/* 로고 위치 조정 */
+.main_logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 11px;
+    z-index: 1;
+}
+
+
+
+
+/* Contents */
+/* Youtube Section */
+#contents .youtube {
+    padding: 0 16px;
+    /* transform: translateY(-100%); */
+    margin-top: 0 !important;
+    margin-bottom: 90px;
+}
+
+#contents .youtube iframe {
+    width: 100%;
+    height: 333px;
+}
+
+#contents .youtube iframe:nth-child(3) {
+    margin: 40px 0;
+}
+#contents .youtube iframe:nth-child(4) {
+    margin-bottom: 16px;
+}
+#contents .youtube h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #202020;
+    font-weight: 500;
+    position: relative;
+    padding: 40px 0 40px;
+}
+/* #contents .youtube h2::before,
+#contents .youtube h2::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #c6a972;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-45deg);
+}
+#contents .youtube h2::before {
+    left: 53px;
+    top: -9px;
+}
+#contents .youtube h2::after {
+    left: 6px;
+    top: 35px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

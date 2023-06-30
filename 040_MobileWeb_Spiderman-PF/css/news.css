@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+#wrap {
+    width: 100%;
+    height: 100% !important;
+    background: #000;
+}
+body {
+    font-family: 'Roboto',sans-serif;
+}
+main {
+    padding: 0 16px 16px;
+    margin-bottom: 90px;
+}
+
+/* 로고 위치 조정 */
+.main_logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 11px;
+    z-index: 1;
+}
+
+.search_img {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    z-index: 1;
+}
+
+.title_name {
+    font-size: 20px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+    padding: 30px 0;
+}
+.title_name h3 {
+
+}
+/* .title_name::before,
+.title_name::after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: #c6a972;
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-45deg);
+}
+.title_name::before {
+    left: 53px;
+    top: -9px;
+}
+.title_name::after {
+    left: 6px;
+    top: 35px;
+} */
+
+
+.news_list ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.news_list li {
+    margin: 6px 0 4px;
+    width: 49%;
+    display: none;
+}
+.news_list li img {
+    width: 100%;
+    height: 100%;
+}
+.news_list li h3 {
+    width: 100%;
+}
+.news_list .news_info strong {
+    color: #767676;
+    font-size: 13px;
+    line-height: 1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.news_list .news_info {
+    padding-top: 10px;
+}
+
+.news_list .news_info p {
+    /* margin-top: 8px; */
+    color: #fff;    
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    line-height: 1.3;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+.more_btn {
+    text-align: center;
+    padding: 15px 0;
+    
+}
+.more_btn div {
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
